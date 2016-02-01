@@ -1,7 +1,6 @@
 <div class="container">
   <div class="row header-row">
-    <div class="col-md-2"></div>
-    <div class="col-md-4 text-center">
+    <div class="col-md-4 col-md-offset-2 text-center">
       <%= image_tag 'logo.png', :class => 'top-logo' %>
       <h1>Coming Soon to Bear Creek!</h1>
       <p>The Par 3 Challenge is a mobile web app you can easily access from your phone.  It allows you to play a Hole-In-One and Birdie contest while you are at the golf course to win cash and prizes!</p>
@@ -9,7 +8,6 @@
     <div class="col-md-4 text-center">
       <%= image_tag 'top-row-phone.png', :class => 'example-img' %>
     </div>
-    <div class="col-md-2"></div>
   </div>
   <div class="row info-row info-row-1">
     <div class="col-md-2"></div>
@@ -27,20 +25,21 @@
     <div class="col-md-2"></div>
   </div>
   <div class="row info-row">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-md-offset-2 text-center">
       <%= image_tag 'row-3-example.png', :class => 'example-img' %>
     </div>
     <div class="col-md-4">
       <h2>When you reach the hole, aim for the cup and take your shot.</h2>
       <p>Our cloud-based monitoring station will record the live action and send the data to our servers.  As you leave the green, use your phone to indicate how you did. </p>
       <p>Be sure to let us know if you missed; the system puts 5% of your stake into an ever-growing side pot.  The first Hole-In-One wins the contest they entered, sponsor prizes and sweep all the money in the side pot as well!</p>
+      <p class="accent">
+        <i class="fa fa-facebook"></i>
+        Footage of good performance is loaded to social media sources for you to share with friends!
+      </p>
     </div>
-    <div class="col-md-2"></div>
   </div>
   <div class="row info-row">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-md-offset-2">
       <h2>How about a bonus $100?</h2>
       <p>The Par 3 Challenge also has a Player Point System. Each month the points leader at the course wins $100!  Every time you play the game, you are rewarded one point per dollar you stake.  If you score a Birdie, you are rewarded 5 points.  Hole-out from the sand and pick up 50 points.  Hit an Ace and earn 100 points!</p>
       <p>The Par 3 Challenge notification system keeps you up to date on points leader, available tee times with double points and upcoming national & local sponsor prizes.</p>
@@ -48,11 +47,9 @@
     <div class="col-md-4 text-center">
       <%= image_tag 'row-4-example.png', :class => 'example-img' %>
     </div>
-    <div class="col-md-2"></div>
   </div>
   <div class="row form-row" id="suggestion-form">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-md-offset-4">
       <h2>Who would you like to see host Par 3 Challenge?</h2>
       <p>If you have a course where you would like to see Par 3 Challenge, please let us know by filling out the form below.</p>
       <% if flash[:message] %>
@@ -78,11 +75,9 @@
           <button type="submit" class="btn submit-button">SUBMIT REQUEST</button>
       <% end %>
     </div>
-    <div class="col-md-4"></div>
   </div>
   <div class="row footer-row text-center">
-    <div class="col-md-4"></div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-md-offset-4">
       <%= image_tag 'bottom-logo.png' %>
     </div>
     <div class="col-md-2">
@@ -92,6 +87,5 @@
         (770) 905-9802
       </address>
     </div>
-    <div class="col-md-4"></div>
   </div>
 </div>
