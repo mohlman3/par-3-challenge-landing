@@ -1,0 +1,26 @@
+default: &default
+  address: "smtp.mandrillapp.com"
+  port: 587
+  domain: "autit.com"
+  authentication: "plain"
+  user_name: "matthew@ohlman.com"
+  password: "PjspouNNNOFKuWezwjKokQ"
+  perform_deliveries: false
+
+development:
+  <<: *default
+  perform_deliveries: true
+
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+  perform_deliveries: true
+  address: "smtp.mandrillapp.com"
+  port: 587
+  domain: "autit.com"
+  authentication: "plain"
+  user_name: "matthew@ohlman.com"
+  password: "PjspouNNNOFKuWezwjKokQ"

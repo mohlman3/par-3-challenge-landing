@@ -1,0 +1,97 @@
+<div class="container">
+  <div class="row header-row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4 text-center">
+      <%= image_tag 'logo.png', :class => 'top-logo' %>
+      <h1>Coming Soon to Bear Creek!</h1>
+      <p>The Par 3 Challenge is a mobile web app you can easily access from your phone.  It allows you to play a Hole-In-One and Birdie contest while you are at the golf course to win cash and prizes!</p>
+    </div>
+    <div class="col-md-4 text-center">
+      <%= image_tag 'top-row-phone.png', :class => 'example-img' %>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row info-row info-row-1">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <h2>It’s incredibly simple to play</h2>
+      <p>Just load the web app when you arrive at the course and choose your contest level.  Enter your information and start your round. You will have 5 hours to complete the designated Par 3 Hole.</p>
+      <p>You can purchase a shot from $1 to as high as $10.  The prize information is loaded on the screen for each dollar level.</p>
+      <p class="accent">
+        The game works on iPhone, Android, Windows Phone and Blackberry.
+      </p>
+    </div>
+    <div class="col-md-4 text-center">
+      <%= image_tag 'row-2-phone.png', :class => 'example-img' %>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row info-row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <%= image_tag 'row-3-example.png', :class => 'example-img' %>
+    </div>
+    <div class="col-md-4">
+      <h2>When you reach the hole, aim for the cup and take your shot.</h2>
+      <p>Our cloud-based monitoring station will record the live action and send the data to our servers.  As you leave the green, use your phone to indicate how you did. </p>
+      <p>Be sure to let us know if you missed; the system puts 5% of your stake into an ever-growing side pot.  The first Hole-In-One wins the contest they entered, sponsor prizes and sweep all the money in the side pot as well!</p>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row info-row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <h2>How about a bonus $100?</h2>
+      <p>The Par 3 Challenge also has a Player Point System. Each month the points leader at the course wins $100!  Every time you play the game, you are rewarded one point per dollar you stake.  If you score a Birdie, you are rewarded 5 points.  Hole-out from the sand and pick up 50 points.  Hit an Ace and earn 100 points!</p>
+      <p>The Par 3 Challenge notification system keeps you up to date on points leader, available tee times with double points and upcoming national & local sponsor prizes.</p>
+    </div>
+    <div class="col-md-4 text-center">
+      <%= image_tag 'row-4-example.png', :class => 'example-img' %>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row form-row" id="suggestion-form">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <h2>Who would you like to see host Par 3 Challenge?</h2>
+      <p>If you have a course where you would like to see Par 3 Challenge, please let us know by filling out the form below.</p>
+      <% if flash[:message] %>
+      <p class="alert alert-success"><%= flash[:message] %></p>
+      <% end %>
+      <%= form_tag '/suggest' do %>
+          <div class="row">
+              <div class="form-group floating-label-form-group text-left">
+                <label for="name">Course Name</label>
+                <%= text_field_tag :name, '', :placeholder => 'Course Name' %>
+              </div>
+          </div>
+          <div class="row">
+            <div class="form-group floating-label-form-group pull-left text-left city-state">
+              <label for="name">Course City</label>
+              <%= text_field_tag :city, '', :placeholder => 'Course City' %>
+            </div>
+            <div class="form-group floating-label-form-group pull-left text-left city-state">
+              <label for="name">Course State</label>
+              <%= text_field_tag :state, '', :placeholder => 'Course State' %>
+            </div>
+          </div>
+          <button type="submit" class="btn submit-button">SUBMIT REQUEST</button>
+      <% end %>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  <div class="row footer-row text-center">
+    <div class="col-md-4"></div>
+    <div class="col-md-2">
+      <%= image_tag 'bottom-logo.png' %>
+    </div>
+    <div class="col-md-2">
+      <address>
+        3330 Preston Ridge Ste 380<br>
+        Alpharetta GA 30005<br>
+        (770) 905-9802
+      </address>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
