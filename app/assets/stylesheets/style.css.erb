@@ -29,7 +29,7 @@ body > .container {
 }
 
 .header-row .example-img {
-    width: 377px;
+    width: 79%;
 }
 
 .top-logo {
@@ -70,6 +70,9 @@ body > .container {
     letter-spacing:0.07px;
     line-height:26px;
     text-align:left;
+}
+
+.info-row img {
 }
 
 .form-row {
@@ -168,3 +171,13 @@ body > .container {
     width: 50%;
 }
 
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    .example-img-1, .example-img-2, .example-img-3 {
+        width: 75%;
+    }
+}
