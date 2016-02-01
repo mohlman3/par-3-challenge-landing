@@ -63,6 +63,14 @@ body > .container {
     margin-top: 125px;
 }
 
+.info-row-2 h2 {
+    margin-top: 50px;
+}
+
+.info-row-3 h2 {
+    margin-top: 75px;
+}
+
 .info-row p {
     font-family:AvenirNext-Regular;
     font-size:16px;
@@ -172,12 +180,16 @@ body > .container {
 }
 
 /* Portrait */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
+@media screen and (max-width: 600px) {
     .example-img-1, .example-img-2, .example-img-3 {
         width: 75%;
+    }
+
+    .info-row {
+        padding-top: 0;
+    }
+
+    .info-row h2 {
+        margin-top: 40px;
     }
 }
